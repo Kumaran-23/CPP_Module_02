@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 16:56:29 by snair             #+#    #+#             */
-/*   Updated: 2022/12/01 07:55:49 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/15 16:44:58 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ the float value mulitplied by 1<<_bits amount and then rounding it of*/
 Fixed::Fixed(const float f)
 {
 	//std::cout << "Float constructor called" << std::endl;
-	this->_value = std::roundf(f * (1<< this->_bits));
+	this->_value = roundf(f * (1<< this->_bits));
 }
 
 //copy assignment operator for Fixed class
